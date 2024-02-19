@@ -57,14 +57,14 @@ document.querySelector(".pbottom").addEventListener("click", function(dets){
 var clickednum = Number(dets.target.textContent)
   if(clickednum === hitrn)
   {
-    righthit();
     increaseScore();
     makebubble();
     getNewHit();
+    righthit();
   }
   else{
-    wronghit();
     decreasescore();
+     wronghit();
   }
 })
 document.querySelector("button").addEventListener("click",
@@ -72,4 +72,8 @@ function(){
 runtimer();
 makebubble();
 getNewHit();
+  })
+document.querySelector(".res").addEventListener("click",
+function(){
+window.location.reload();  
 })
