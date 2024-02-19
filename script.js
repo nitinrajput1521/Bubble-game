@@ -1,8 +1,24 @@
 var time = 60;
 var score = 0;
 var hitrn=0;
+var right_hit=0;
+var wrong_hit=0;
+
+function righthit(){
+  right_hit +=1;
+  document.querySelector("#rh").innerHTML = right_hit;
+}
+function wronghit(){
+  wrong_hit +=1;
+  document.querySelector("#wh").innerHTML = wrong_hit;
+}
+
 function increaseScore(){
   score += 10;
+  document.querySelector("#scoreval").textContent = score;
+}
+function decreasescore(){
+  score -= 10;
   document.querySelector("#scoreval").textContent = score;
 }
 
@@ -41,13 +57,19 @@ document.querySelector(".pbottom").addEventListener("click", function(dets){
 var clickednum = Number(dets.target.textContent)
   if(clickednum === hitrn)
   {
+    righthit();
     increaseScore();
     makebubble();
     getNewHit();
-   
+  }
+  else{
+    wronghit();
+    decreasescore();
   }
 })
-
+document.querySelector("button").addEventListener("click",
+function(){
 runtimer();
 makebubble();
 getNewHit();
+})
