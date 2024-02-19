@@ -100,11 +100,11 @@ body{
 }
 button{
   background-color: black;
-  color: #0df814;
-  font-size: 5vh;
+  color:#30f83e;
+  font-size: 4vh;
   font-weight: 5vw;
   padding: 7px;
-  border: 2px solid #0c4002;
+  border: 2px solid #092504;
   border-radius: 10px;
   transition: 0.5s all ease-in-out;
 }
@@ -117,37 +117,85 @@ button:hover{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 5vw;
+  gap: 4vw;
+  /*border: 2px solid blue;*/
 }
 .right-hit{
   display: flex;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  padding: 1vh;
   justify-content: center;
   align-items: cneter;
   color: white;
   background-color: green;
-  padding: 1vw;
-  border-radius: 10px;
-  gap: 1vw;
-  transition: 0.5s all ease-in-out;
-}
-.wrong-hit{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: red;
-  padding: 1vw;
-  border-radius: 10px;
-  gap: 1vw;
+  gap: 0.9vh;
   transition: 0.5s all ease-in-out;
 }
 .right-hit:hover{
   cursor: pointer;
   background-color: transparent;
-  color: green;
+  border: 3px solid green;
+}
+.wrong-hit{
+  display: flex;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  padding: 1vh;
+  background-color:#990003;
+  color: white;
+  gap: 0.9vh;
+  transition: 0.5s all ease-in-out;
 }
 .wrong-hit:hover{
   cursor: pointer;
   background-color: transparent;
-  color:#f50000;
+  border: 3px solid #990003;
+}
+.res{
+  display: flex;
+  font-size: 2.5vh;
+  border-radius: 10px;
+  padding: 1vh;
+  justify-content: center;
+  align-items: cneter;
+  color: white;
+  background-color:#0a240a;
+  gap: 0.9vh;
+  transition: 0.5s all ease-in-out;
+}
+.res:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid #0a240a;
+}
+@media(max-width:800px)
+{
+ 
+.ptop{
+  display: flex;
+  gap: 0.5vh;
+} 
+
+.elem{
+  height: 3vh;
+  padding: 1vw;
+  border: none;
+}
+  .Score-manager{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1vh;
+    gap: 1vh;
+    
+  }
+.panel{
+  overflow: hidden;
+}
+.bubble{
+  width: 7.5vh;
+  height: 6.5vh;
+  font-size: 2vh;
+  font-weight: 400;
+}
 }
