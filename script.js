@@ -3,6 +3,8 @@ var score = 0;
 var hitrn=0;
 var right_hit=0;
 var wrong_hit=0;
+const audio1= new Audio("multi-pop-1-188165.mp3");
+const audio2= new Audio("Z7E8E5U-beep-beep.mp3");
 
 function righthit(){
   right_hit +=1;
@@ -57,12 +59,14 @@ document.querySelector(".pbottom").addEventListener("click", function(dets){
 var clickednum = Number(dets.target.textContent)
   if(clickednum === hitrn)
   {
+    audio1.play();
     increaseScore();
     makebubble();
     getNewHit();
     righthit();
   }
   else{
+    audio2.play();
     decreasescore();
      wronghit();
   }
