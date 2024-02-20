@@ -91,12 +91,15 @@ body{
   height: 2.5vw;
   border-radius: 50%;
   background-color:#666666;
-  transition: 0.3s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
 .bubble:hover{
   cursor: pointer;
   background-color: transparent;
   border: 5px solid white;
+}
+.bubble:active{
+  scale: 2.5;
 }
 button{
   background-color: black;
