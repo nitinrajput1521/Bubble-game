@@ -19,12 +19,27 @@ body{
   align-items: center;
   gap: 5vh;
 }
+
 .panel{
   height: 80%;
   width: 80%;
   background:url('ben-griffiths-2t-InoWsItg-unsplash.jpg') no-repeat center center/cover;
   box-shadow: 5px 5px 5px #2f2d2d, -5px -5px 5px #2f2d2d;
 }
+#loader{
+height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:url('game-characters-1744210_1920.jpg') no-repeat center center/cover;
+  position: fixed;
+  color: #0d0d0d;
+  gap:10vh;
+  z-index: 99;
+}
+
 .ptop{
   display: flex;
   padding: 0px 10%;
@@ -201,4 +216,11 @@ button:hover{
   font-size: 2vh;
   font-weight: 400;
 }
+
+#loader{
+  font-size: 4vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}  
 }
