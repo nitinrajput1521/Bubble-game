@@ -16,7 +16,7 @@ function loadingtime(){
 }
 
 tl.to("#loader h2",{
-scale:1.5,
+scale:1.2,
 stagger:3,
 delay:2,
 onStart:loadingtime(),
