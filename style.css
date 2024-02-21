@@ -204,6 +204,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     padding-bottom: 1vh;
+    margin-bottom: 1vh;
     gap: 1vh;
     
   }
@@ -222,5 +223,43 @@ button:hover{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}  
+  text-align: center;
+}
+}
+@media(max-width:360px){
+  .ptop{
+    display: flex;
+    gap: 0.5vh;
+  } 
+
+  .elem{
+    height: 3vh;
+    padding: 1vw;
+    border: none;
+  }
+    .Score-manager{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1vh;
+      gap: 1vh;
+
+}
+  .panel{
+    overflow: hidden;
+  }
+  .bubble{
+    width: 6.5vh;
+    height: 5.5vh;
+    font-size: 2vh;
+    font-weight: 400;
+  }
+
+  #loader{
+    font-size: 2vh;
+    flex-wrap: wrap;
+    background: url('andrey-metelev-DEuansgqjns-unsplash.jpg')no-repeat center center/cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
